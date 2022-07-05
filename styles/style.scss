@@ -58,7 +58,7 @@ section{
 .sec1{
     display: none;
     transform: translateY(0) scale(1);
-
+    background-color: rgba(161,288,38,0.849);
 }
 .sec2{
     display: none;
@@ -75,6 +75,23 @@ section{
     transform: translateY(0) scale(1);
 
 }
+.sec{
+    display:none;
+    transform: translateY(0) scale(1);
+}
+
+.active{
+    display:block;
+    animation: scaleAnim 1s ease-in-out;
+    @keyframes scaleAnim{
+        0%{
+            transform:translateY(-100%) scaleY(0)
+        }
+        100%{
+            transform:translateY(0%) scaleY(1)
+        }
+    }
+}
 
 //Controls
 .controlls{
@@ -86,17 +103,30 @@ section{
     flex-direction: column;
     justify-content: center;
     transform: translateY(-50%);
+    .active-btn{
+        background-color:var(--color-secondary) !important;
+        transition:all .4s ease-in-out;
+        i{
+            color:var(--color-white) !important;
+        }
+    }
     .control{
-    padding:1rem;
-    cursor:pointer;
-    background-color: var(--color-grey4);
-    width: 55px;
-    height:55px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin:.7rem 0;
-    box-shadow: var(--box-shadow-1);
+        padding:1rem;
+        cursor:pointer;
+        background-color: var(--color-grey4);
+        width: 55px;
+        height:55px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin:.7rem 0;
+        box-shadow: var(--box-shadow-1);
+        i{
+            font-size:1.2rem;
+            color:var(--color-grey-2);
+            pointer-events:none;
+        
+        }
     }
 } 
