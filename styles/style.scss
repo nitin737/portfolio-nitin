@@ -62,15 +62,18 @@ section {
   display: none;
   transform: translateY(0) scale(1);
 }
+
 .sec3 {
   display: none;
   transform: translateY(0) scale(1);
 }
+
 .sec4 {
   display: none;
   transform: translateY(0) scale(1);
 }
-.sec {
+
+.sec5 {
   display: none;
   transform: translateY(0) scale(1);
 }
@@ -78,10 +81,12 @@ section {
 .active {
   display: block;
   animation: scaleAnim 1s ease-in-out;
+
   @keyframes scaleAnim {
     0% {
       transform: translateY(-100%) scaleY(0);
     }
+
     100% {
       transform: translateY(0%) scaleY(1);
     }
@@ -98,13 +103,16 @@ section {
   flex-direction: column;
   justify-content: center;
   transform: translateY(-50%);
+
   .active-btn {
     background-color: var(--color-secondary) !important;
     transition: all 0.4s ease-in-out;
+
     i {
       color: var(--color-white) !important;
     }
   }
+
   .control {
     padding: 1rem;
     cursor: pointer;
@@ -117,6 +125,7 @@ section {
     align-items: center;
     margin: 0.7rem 0;
     box-shadow: var(--box-shadow-1);
+
     i {
       font-size: 1.2rem;
       color: var(--color-grey-2);
@@ -129,10 +138,12 @@ section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   height: 100%;
+
   .left-header {
     display: flex;
     align-items: center;
     position: relative;
+
     .h-shape {
       transition: all 0.4s ease-in-out;
       width: 65%;
@@ -144,6 +155,7 @@ section {
       z-index: -1;
       clip-path: polygon(0 0, 46% 0, 79% 100%, 0 100%);
     }
+
     .image {
       border-radius: var(--br-sm-2);
       height: 90%;
@@ -151,29 +163,35 @@ section {
       margin-left: 4rem;
       background-color: var(--color-black);
       transition: all 0.4s ease-in-out;
+
       img {
         width: 100%;
         height: 100%;
         object-fit: cover;
         transition: all 0.4s ease-in-out;
         filter: grayscale(100%);
+
         &:hover {
           filter: grayscale(0);
         }
       }
     }
   }
+
   .right-header {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-right: 18rem;
+
     .name {
       font-size: 3rem;
+
       span {
         color: var(--color-secondary);
       }
     }
+
     p {
       margin: 1.5rem 0;
       line-height: 2rem;
@@ -187,30 +205,36 @@ section {
   grid-template-columns: repeat(2, 1fr);
   padding-top: 3.5rem;
   padding-bottom: 5rem;
+
   .right-about {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
+
     .about-item {
       border: 1px solid var(--color-grey5);
       border-radius: 5px;
       transition: all 0.4s ease-in-out;
       box-shadow: 1px 2px 15px rgba(0, 0, 0, 1);
+
       &:hover {
         cursor: default;
         transform: translateY(-5px);
         border: 1px solid var(--color-secondary);
         box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.32);
       }
+
       .abt-text {
         padding: 1.5rem;
         display: flex;
         flex-direction: column;
+
         .large-text {
           font-size: 3rem;
           font-weight: 700;
           color: var(--color-secondary);
         }
+
         .small-text {
           padding-left: 3rem;
           position: relative;
@@ -218,6 +242,7 @@ section {
           font-size: 1.2rem;
           color: var(--color-grey1);
           letter-spacing: 2px;
+
           &::before {
             content: "";
             position: absolute;
@@ -231,13 +256,16 @@ section {
       }
     }
   }
+
   .left-about {
     padding-right: 5rem;
+
     p {
       line-height: 2rem;
       padding: 1rem;
       color: var(--color-grey1);
     }
+
     h4 {
       font-size: 2rem;
       text-transform: uppercase;
@@ -247,29 +275,36 @@ section {
 
 .about-stats {
   padding-bottom: 4rem;
+
   .progress-bars {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
+
     .progress-bar {
       display: flex;
       flex-direction: column;
+
       .prog-title {
         text-transform: uppercase;
         font-weight: 500;
       }
+
       .progress-con {
         display: flex;
         align-items: center;
+
         .prog-text {
           color: var(--color-grey2);
         }
+
         .progress {
           width: 100%;
           height: 0.45rem;
           background-color: var(--color-grey4);
           margin-left: 1rem;
           position: relative;
+
           span {
             position: absolute;
             top: 0;
@@ -279,15 +314,19 @@ section {
             transition: all 0.4s ease-in-out;
             width: 60%;
           }
+
           .html {
             width: 90%;
           }
+
           .css {
             width: 70%;
           }
+
           .js {
             width: 80%;
           }
+
           .angular {
             width: 85%;
           }
@@ -303,6 +342,7 @@ section {
   text-align: center;
   padding: 3.5rem 0;
   position: relative;
+
   &::before {
     content: "";
     position: absolute;
@@ -314,16 +354,19 @@ section {
     transform: translateX(-50%);
   }
 }
+
 /* Timeline*/
 .timeline {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem;
   padding-bottom: 2rem;
+
   .timeline-item {
     position: relative;
     padding-left: 3rem;
     border-left: 1px solid var(--color-grey5);
+
     .tl-icon {
       position: absolute;
       left: -27px;
@@ -335,10 +378,12 @@ section {
       display: flex;
       align-items: center;
       justify-content: center;
+
       i {
         font-size: 1.3rem;
       }
     }
+
     .tl-duration {
       padding: 0.2rem 0.6rem;
       background-color: var(--color-grey5);
@@ -348,17 +393,20 @@ section {
       text-transform: uppercase;
       font-weight: 500;
     }
+
     h5 {
       padding: 1rem 0;
       text-transform: uppercase;
       font-size: 1.3rem;
       font-weight: 600;
+
       span {
         color: var(--color-grey2);
         font-weight: 500;
         font-size: 1.2rem;
       }
     }
+
     p {
       color: var(--color-grey2);
     }
@@ -376,15 +424,18 @@ section {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
   margin-top: 3rem;
+
   .portfolio-item {
     position: relative;
     border-radius: 15px;
+
     img {
       width: 100%;
       height: 300px;
       object-fit: cover;
       border-radius: 15px;
     }
+
     .hover-items {
       width: 100%;
       height: 100%;
@@ -400,15 +451,18 @@ section {
       opacity: 0;
       transform: scale(0);
       transition: all 0.4s ease-in-out;
+
       h3 {
         font-size: 1.5rem;
         color: var(--color-white);
         margin-bottom: 1.5rem;
       }
+
       .icons {
         display: flex;
         justify-content: center;
         align-items: center;
+
         .icon {
           background-color: var(--color-primary);
           border-radius: 50%;
@@ -420,13 +474,16 @@ section {
           margin: 0 1rem;
           cursor: pointer;
           transition: all 0.4s ease-in-out;
+
           i {
             font-size: 1.5rem;
             color: var(--color-white);
             margin: 0 1rem;
           }
+
           &:hover {
             background-color: var(--color-white);
+
             i {
               color: var(--color-primary);
             }
@@ -448,22 +505,26 @@ section {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
   margin-top: 3rem;
+
   .blog {
     position: relative;
     background-color: var(--color-grey5);
     border-radius: 5px;
     box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
     transition: all 0.4s ease-in-out;
+
     &:hover {
       box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.3);
       transform: translateY(-5px);
       transition: all 0.4s ease-in-out;
+
       img {
         filter: grayscale(0);
         transform: scale(1.1);
         box-shadow: 1px 4px 20px rgba(0, 0, 0, 0.8);
       }
     }
+
     img {
       width: 100%;
       height: 300px;
@@ -473,19 +534,23 @@ section {
       filter: grayscale(100%);
       transition: all 0.4s ease-in-out;
     }
+
     .blog-text {
       margin-top: -7px;
       padding: 1.1rem;
       border-top: 8px solid var(--color-secondary);
+
       h4 {
         font-size: 1.5rem;
         margin-bottom: 0.7rem;
         transition: all 0.4s ease-in-out;
         cursor: pointer;
+
         &:hover {
           color: var(--color-primary);
         }
       }
+
       p {
         color: var(--color-grey2);
         line-height: 2rem;
@@ -499,22 +564,55 @@ section {
 .contact-content-con {
   display: flex;
   padding-top: 3.5rem;
+
   .left-contact {
     flex: 2;
+
+    h4 {
+      margin-top: 1rem;
+      font-size: 2rem;
+      text-transform: uppercase;
+    }
+
+    p {
+      margin: 1rem 0;
+      line-height: 2rem;
+    }
+
+    .contact-info {
+      .contact-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        p {
+          margin: 0.3rem 0 !important;
+          padding: 0 !important;
+        }
+      }
+    }
+    .contact-icon {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
   }
 
   .right-contact {
     flex: 3;
     margin-left: 3rem;
+
     .input-control {
       margin: 1.5rem 0;
+
       input,
       textarea {
-        border-radius: 30px;
+        border: 1px solid white;
+        border-radius: 10px;
         font-weight: inherit;
         font-size: inherit;
         font-family: inherit;
-        padding: 8rem 1.1rem;
+        padding: 0.8rem 1.1rem;
         outline: none;
         border: none;
         background-color: var(--color-grey5);
@@ -522,6 +620,19 @@ section {
         color: var(--color-white);
         resize: none;
       }
+    }
+
+    .i-c-2 {
+      display: flex;
+
+      :last-child {
+        margin-left: 1.5rem;
+      }
+    }
+
+    .submit-btn {
+      display: flex;
+      justify-content: flex-start;
     }
   }
 }
@@ -531,6 +642,7 @@ section {
   display: flex;
   align-self: flex-start;
 }
+
 .main-btn {
   border-radius: 30px;
   color: inherit;
@@ -541,9 +653,11 @@ section {
   align-self: flex-start;
   align-items: center;
   overflow: hidden;
+
   .btn-text {
     padding: 0 2rem;
   }
+
   .btn-icon {
     background-color: var(--color-secondary);
     display: flex;
@@ -552,6 +666,7 @@ section {
     border-radius: 50%;
     padding: 1rem;
   }
+
   &::before {
     content: "";
     position: absolute;
@@ -561,8 +676,10 @@ section {
     transition: all 0.4s ease-out;
     z-index: -1;
   }
+
   &:hover {
     transition: all 0.4s ease-out;
+
     &::before {
       width: 100%;
       height: 100%;
@@ -575,14 +692,17 @@ section {
 
 .main-title {
   text-align: center;
+
   h2 {
     position: relative;
     text-transform: uppercase;
     font-size: 4rem;
     font-weight: 700;
+
     span {
       color: var(--color-secondary);
     }
+
     .bg-text {
       position: absolute;
       top: 50%;
