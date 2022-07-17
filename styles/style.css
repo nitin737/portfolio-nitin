@@ -38,7 +38,7 @@
 body {
   background-color: var(--color-primary);
   font-family: "poppins", sans-serif;
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: var(--color-white);
   transition: all 0.4s ease-in-out;
 }
@@ -385,7 +385,7 @@ section {
 }
 .timeline .timeline-item h5 {
   padding: 1rem 0;
-  text-transform: uppercase;
+  text-transform: inherit;
   font-size: 1.3rem;
   font-weight: 600;
 }
@@ -500,7 +500,7 @@ section {
 }
 .blogs .blog img {
   width: 100%;
-  height: 300px;
+  height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
   border-top-left-radius: 5px;
@@ -514,7 +514,7 @@ section {
   border-top: 8px solid var(--color-secondary);
 }
 .blogs .blog .blog-text h4 {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   margin-bottom: 0.7rem;
   transition: all 0.4s ease-in-out;
   cursor: pointer;
